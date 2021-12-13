@@ -14,9 +14,33 @@ int main()
         int b = 1;
         a++;
     }
-    int i, j;
-    for (i = 1;i <= 50; i++) {
-        for (j = 1; j <= i; j++) {
+    //Vytvoøení tzv.naklonìné roviny
+    for (int i = 1;i <= 10; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%3d ", j);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    //Opaèná naklonìná rovina
+    for (int i = 10; i >= 0; i--) {
+        for (int j = i; j > 0; j--) {
+            printf("%3d ", j);
+        }
+        printf("\n");
+    }
+
+    //Diamant
+    for (int i = 1; i <= 9; i++) {
+        for (int j = 1; j <= i; j++) {
+            printf("%3d ", j);
+        }
+        printf("\n");
+
+    }
+    for (int i = 8; i >= 0; i--) {
+        for (int j = 1; j <= i; j++) {
             printf("%3d ", j);
         }
         printf("\n");
