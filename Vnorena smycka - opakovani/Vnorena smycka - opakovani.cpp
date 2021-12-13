@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
+    //Opakování vypisování malé násobilky
     int a = 1;
     int b = 1;
     printf("Mala nasobika:\n");
@@ -12,5 +13,12 @@ int main()
         printf("\n");
         int b = 1;
         a++;
+    }
+    int i, j;
+    for (i = 1;i <= 50; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%3d ", j);
+        }
+        printf("\n");
     }
 }
